@@ -14,7 +14,7 @@ next_clip_id: "part-1-01-first"
 
 | 자료 | 내려받기 |
 |---|---|
-| 오전 강의 — Claude Code란, 연구개발 활용 사례, 장비 연동, 피지컬 AI, Jev | [KIMM-오전-강의.pdf](/decks/kimm-morning.pdf) |
+| 오전 강의 — Claude Code란, 연구개발 활용 사례, 장비 연동·CAD 자동화, 피지컬 AI, Jev | [KIMM-오전-강의.pdf](/decks/kimm-morning.pdf) |
 | 오후 실습 가이드 — 실습 1~4, +α Aside, 더 해 보기, 막힐 때 | [KIMM-오후-실습가이드.pdf](/decks/kimm-afternoon.pdf) |
 
 PDF 속 영상은 정지 화면입니다. 화면을 누르거나 아래 원본 주소를 열면 재생됩니다.
