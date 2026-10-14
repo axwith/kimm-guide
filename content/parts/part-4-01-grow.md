@@ -46,6 +46,10 @@ STEP 5 자동 실행까지 등록할지 선택 창에서 고릅니다.
 
 오전에 본 `/skillers-suda:skillers-suda` 로 같은 일을 스킬로 만들 수도 있습니다.
 
+**이렇게 나옵니다** — 스킬 만들고 새 세션에서 부르기
+
+![스킬 만들고 새 세션에서 부르기 (사전 실행 결과)](/images/results/p4-trend.png)
+
 **확인할 것**: 새 세션에서 `/trend` 가 불리고, 바꿀 규칙 하나를 말해 고쳤습니다.
 
 ---
@@ -91,6 +95,10 @@ Get-Content C:\work\kimm\research-planner\logs\agent_history.jsonl -Encoding UTF
 ```text
 내 자료로 KB를 키우려면 다음 묶음에 뭘 넣어야 할지 /kb gaps 보고 정리해 줘
 ```
+
+**이렇게 나옵니다** — /wrap 기록, 다음 세션 회수, KB 빈칸
+
+![/wrap 기록, 다음 세션 회수, KB 빈칸 (사전 실행 결과)](/images/results/p4-wrap.png)
 
 **확인할 것**: 다음 묶음에 넣을 자료 세 가지를 적었습니다.
 
