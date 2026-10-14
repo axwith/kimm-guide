@@ -5,7 +5,7 @@
     "description": "한국기계연구원 Claude Code 활용 교육 실습 안내",
     "course_version": "2026-10-15",
     "version": "1.0.0",
-    "lastUpdated": "2026-10-14"
+    "lastUpdated": "2026-10-15"
   },
   "sections": [
     {
@@ -99,11 +99,26 @@
       "type": "lecture"
     },
     {
+      "id": "part-3-02-aside",
+      "tier": "part-3",
+      "part": 3,
+      "clip": 2,
+      "order": 7,
+      "slug": "aside",
+      "title": "+α. 검색이 안 될 때 — Aside",
+      "subtitle": "브라우저를 Claude Code가 직접 열게 하기(설치·Claude 연결·CLI)",
+      "duration_min": 15,
+      "icon": "globe",
+      "badge": "+α",
+      "file": "parts/part-3-02-aside.md",
+      "type": "lecture"
+    },
+    {
       "id": "part-4-01-grow",
       "tier": "part-4",
       "part": 4,
       "clip": 1,
-      "order": 7,
+      "order": 8,
       "slug": "grow",
       "title": "실습 4. 내 공간으로 키우기",
       "subtitle": "스킬, 훅 기록, /wrap, KB 계획, 예약 실행",
@@ -118,7 +133,7 @@
       "tier": "part-4",
       "part": 4,
       "clip": 2,
-      "order": 8,
+      "order": 9,
       "slug": "more",
       "title": "더 해 보기와 마무리",
       "subtitle": "주제 비교, 세 관점 검토, 모의 장비 MCP, 설문",
@@ -133,7 +148,7 @@
       "tier": "part-4",
       "part": 4,
       "clip": 3,
-      "order": 9,
+      "order": 10,
       "slug": "after",
       "title": "강의 뒤에 계속 쓰기",
       "subtitle": "KB를 묶음으로 키우기, 예약 실행, 기관 규정",
@@ -148,7 +163,7 @@
       "tier": "reference",
       "part": null,
       "clip": null,
-      "order": 110,
+      "order": 11,
       "slug": "troubleshooting",
       "title": "막힐 때",
       "subtitle": "설치·로그인·권한·한도·인터넷·플러그인",
@@ -163,7 +178,7 @@
       "tier": "reference",
       "part": null,
       "clip": null,
-      "order": 111,
+      "order": 12,
       "slug": "commands",
       "title": "명령 한눈에 보기",
       "subtitle": "research-planner 명령과 실습 스킬",

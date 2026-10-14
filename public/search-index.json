@@ -110,6 +110,25 @@
     "url": "/#part-3-01-one-topic"
   },
   {
+    "id": "part-3-02-aside",
+    "tier": "part-3",
+    "tier_label": "실습 3. 주제 하나로 끝까지",
+    "title": "+α. 검색이 안 될 때 — Aside",
+    "subtitle": "브라우저를 Claude Code가 직접 열게 하기(설치·Claude 연결·CLI)",
+    "headings": [
+      "이 절에서 보는 것",
+      "1. Aside 설치",
+      "2. Aside에 Claude 연결",
+      "3. Aside CLI 설치와 로그인",
+      "4. Claude Code에 Aside 스킬 넣기",
+      "5. Claude Code에서 Aside 불러 쓰기",
+      "지킬 것",
+      "자주 막히는 곳",
+      "다음"
+    ],
+    "url": "/#part-3-02-aside"
+  },
+  {
     "id": "part-4-01-grow",
     "tier": "part-4",
     "tier_label": "실습 4. 내 공간으로 키우기",

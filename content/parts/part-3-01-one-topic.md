@@ -1,7 +1,7 @@
 ---
 course_clip_ref: "실습 3"
 result_path: "C:\\work\\kimm\\research-planner\\10-literature · 50-grants · 20-scenarios · 40-plans"
-next_clip_id: "part-4-01-grow"
+next_clip_id: "part-3-02-aside"
 ---
 
 # 실습 3. 주제 하나로 끝까지
@@ -162,4 +162,4 @@ citation-reviewer 에게 이 문헌표의 핵심 주장마다 근거가 충분�
 
 ## 다음
 
-[실습 4. 내 공간으로 키우기 →](#part-4-01-grow)
+[+α. 검색이 안 될 때 — Aside →](#part-3-02-aside) · 건너뛰려면 [실습 4 →](#part-4-01-grow)
