@@ -70,6 +70,14 @@ aside --version
 
 버전 숫자가 나오면 됩니다. 명령을 못 찾는다고 나오면 PowerShell 창을 닫고 다시 엽니다.
 
+이어서 CLI를 내 Aside 계정에 연결합니다.
+
+```powershell
+aside login
+```
+
+Aside 앱의 **Settings → Account → Devices** 에 뜬 코드를 승인하면 PowerShell에 `Signed in as …` 가 나옵니다. 승인하기 전에 PowerShell 창을 닫지 않습니다. 이미 로그인돼 있다고 나오면 그대로 넘어갑니다.
+
 <details>
 <summary>설정 화면에서 설치가 안 되면 (PowerShell로 설치)</summary>
 
@@ -77,11 +85,10 @@ aside --version
 $installer = Join-Path $env:TEMP 'aside-install.ps1'
 Invoke-WebRequest -UseBasicParsing -Uri https://releases.aside.com/install.ps1 -OutFile $installer
 & $installer
-aside login
 aside skills install --target claude-code
 ```
 
-`aside login` 은 Aside 앱의 **Settings → Account → Devices** 에 뜬 코드를 승인하면 끝납니다. 공식 안내는 설치 파일을 실행하기 전에 서명(게시자 `AT YOUR SIDE INC`)을 확인하라고 합니다. 기관 PC에서 서명 확인이 오류로 나오면 PC 관리자에게 문의하고 강사 화면으로 봅니다.
+마지막 줄이 Claude Code 스킬을 넣습니다. 설치가 끝나면 위의 `aside login` 을 합니다. 공식 안내는 설치 파일을 실행하기 전에 서명(게시자 `AT YOUR SIDE INC`)을 확인하라고 합니다. 기관 PC에서 서명 확인이 오류로 나오면 PC 관리자에게 문의하고 강사 화면으로 봅니다.
 
 </details>
 
@@ -91,7 +98,7 @@ Claude Code 앱에서 **새 세션**을 열어야 Aside 스킬이 보입니다.
 
 ## 4. Claude Code에서 Aside 불러 쓰기
 
-`C:\work\kimm\research-planner` 로 새 세션을 열고 보냅니다.
+Aside 앱을 먼저 켜 둡니다(켠 직후에는 1~2분 뒤에 연결됩니다). 그다음 `C:\work\kimm\research-planner` 로 새 세션을 열고 보냅니다.
 
 ```text
 50-grants 의 공고 목록에서 1번 공고의 상세 페이지를 Aside 브라우저로 열어서 신청 자격, 지원 기간, 제출 서류를 표로 정리해 50-grants 에 저장해 줘. 로그인은 하지 말고 공개 페이지만 보고, 확인한 페이지 주소를 함께 적어 줘.
