@@ -19,21 +19,26 @@ next_clip_id: "part-4-01-grow"
 
 | 순서 | 하는 일 | 어디서 |
 |---|---|---|
-| 1 | Aside 설치, 계정 만들기 | 브라우저 |
+| 1 | Aside 내려받아 설치, 로그인 | 브라우저 · Aside |
 | 2 | Aside에 Claude 연결 | Aside 설정 |
-| 3 | Aside CLI 설치, 로그인 | Aside 설정 · PowerShell |
-| 4 | Claude Code에 Aside 스킬 넣기 | PowerShell |
-| 5 | Claude Code에서 Aside 불러 쓰기 | Claude Code |
+| 3 | CLI와 Claude Code 스킬 설치 | Aside 설정 |
+| 4 | Claude Code에서 Aside 불러 쓰기 | Claude Code |
 
-> 이 절은 강사 맥에서 확인했습니다. Windows에서 막히는 곳이 있으면 강사 화면을 보며 따라옵니다.
+> 강의 때 강사 맥북에서도 다운로드부터 같이 설치합니다. 강사 화면을 보며 따라옵니다.
 
 ---
 
-## 1. Aside 설치
+## 1. Aside 내려받아 설치하고 로그인
 
-1. [aside.com/download](https://aside.com/download) 에 들어가면 Windows용 설치 파일(`AsideInstaller-…-win-x64.exe`)이 받아집니다.
-2. 받은 파일을 실행해 설치합니다.
-3. Aside를 열고 계정을 만들거나 로그인합니다. 무료 요금제로 충분합니다.
+1. [aside.com/download](https://aside.com/download) 에 들어가면 Windows용 설치 파일(`AsideInstaller-…-win-x64.exe`)이 자동으로 받아집니다. 안 받아지면 **Download Aside manually** 를 누릅니다.
+
+   ![Aside 다운로드 페이지 (Windows에서 열었을 때)](/images/setup/aside-01-download.png)
+
+2. `다운로드` 폴더에서 받은 파일을 실행하고 안내대로 설치합니다.
+3. Aside가 열리면 이메일을 넣고 **Continue**, 또는 **Sign in with Google** 로 로그인합니다. 처음이면 그대로 계정이 만들어집니다. 무료 요금제로 충분합니다.
+
+   ![Aside 첫 화면 — 로그인](/images/setup/aside-02-signin.png)
+
 4. 처음 설정에서 기존 브라우저의 기록·쿠키를 가져올지 물으면 **가져오지 않습니다.** 기관 시스템에 로그인된 상태를 Aside에 넘기지 않기 위해서입니다.
 
 ---
@@ -48,51 +53,43 @@ Aside 안의 AI가 쓸 모델로 내 Claude 구독을 연결합니다.
 
 ---
 
-## 3. Aside CLI 설치와 로그인
+## 3. CLI와 Claude Code 스킬 설치 — Aside 설정에서
 
-1. Aside **Settings → Developers** 에서 CLI를 설치합니다.
-2. PowerShell 창을 **새로** 열고 확인합니다.
+Aside **Settings → Developers** 한 화면에서 둘 다 합니다.
+
+1. **Aside CLI** 카드의 설치 버튼을 누릅니다(이미 깔려 있으면 **Update** 로 보입니다).
+2. **Skill & MCP** 의 **Aside Skills** 에서 **Add skill to…** → **Claude Code** 를 고릅니다.
+
+![Aside Settings → Developers (강사 맥, CLI가 이미 설치된 상태)](/images/setup/aside-03-developers.png)
+
+3. PowerShell 창을 **새로** 열고 확인합니다.
 
 ```powershell
 aside --version
 ```
 
-버전 숫자가 나오면 설치된 것입니다. 명령을 못 찾는다고 나오면 PowerShell 창을 닫고 다시 엽니다.
-
-3. CLI를 내 Aside 계정에 로그인시킵니다.
-
-```powershell
-aside login
-```
-
-Aside 앱의 **Settings → Account → Devices** 에 뜬 코드를 승인합니다. PowerShell에 `Signed in as …` 가 나오면 끝입니다. 승인하기 전에 PowerShell 창을 닫지 않습니다.
+버전 숫자가 나오면 됩니다. 명령을 못 찾는다고 나오면 PowerShell 창을 닫고 다시 엽니다.
 
 <details>
-<summary>Settings → Developers 에 설치 버튼이 안 보이면 (PowerShell로 설치)</summary>
+<summary>설정 화면에서 설치가 안 되면 (PowerShell로 설치)</summary>
 
 ```powershell
 $installer = Join-Path $env:TEMP 'aside-install.ps1'
 Invoke-WebRequest -UseBasicParsing -Uri https://releases.aside.com/install.ps1 -OutFile $installer
 & $installer
-```
-
-공식 안내는 실행 전에 서명(게시자 `AT YOUR SIDE INC`)을 확인하라고 합니다. 기관 PC에서 서명 확인이 오류로 나오면 PC 관리자에게 문의하고 이 절은 강사 화면으로 봅니다.
-
-</details>
-
----
-
-## 4. Claude Code에 Aside 스킬 넣기
-
-```powershell
+aside login
 aside skills install --target claude-code
 ```
 
-Claude Code에 Aside 사용법(스킬)이 들어갑니다. Claude Code 앱에서 **새 세션**을 열어야 보입니다.
+`aside login` 은 Aside 앱의 **Settings → Account → Devices** 에 뜬 코드를 승인하면 끝납니다. 공식 안내는 설치 파일을 실행하기 전에 서명(게시자 `AT YOUR SIDE INC`)을 확인하라고 합니다. 기관 PC에서 서명 확인이 오류로 나오면 PC 관리자에게 문의하고 강사 화면으로 봅니다.
+
+</details>
+
+Claude Code 앱에서 **새 세션**을 열어야 Aside 스킬이 보입니다.
 
 ---
 
-## 5. Claude Code에서 Aside 불러 쓰기
+## 4. Claude Code에서 Aside 불러 쓰기
 
 `C:\work\kimm\research-planner` 로 새 세션을 열고 보냅니다.
 
@@ -137,10 +134,10 @@ Aside는 상세 페이지 주소(`iris.go.kr/contents/retrieveBsnsAncmView.do?an
 
 | 증상 | 이렇게 합니다 |
 |---|---|
-| `aside` 명령을 못 찾음 | PowerShell 창을 새로 엽니다. 그래도 없으면 3단계 설치를 다시 합니다 |
+| `aside` 명령을 못 찾음 | PowerShell 창을 새로 엽니다. 그래도 없으면 3단계 CLI 설치를 다시 합니다 |
 | `Aside isn't running on this machine` | Aside 앱을 먼저 켜 둡니다. 막 켰으면 잠시 뒤 다시 보냅니다 |
 | `aside login` 이 끝나지 않음 | Aside **Settings → Account → Devices** 에서 코드를 승인했는지 봅니다 |
-| Claude Code가 Aside를 모름 | 4단계를 하고 **새 세션**을 엽니다 |
+| Claude Code가 Aside를 모름 | 3단계 스킬 설치를 하고 **새 세션**을 엽니다 |
 | 서명 확인 오류(기관 PC) | 관리자 인증서 문제입니다. 오늘은 강사 화면으로 봅니다 |
 
 ---

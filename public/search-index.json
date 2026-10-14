@@ -117,11 +117,10 @@
     "subtitle": "브라우저를 Claude Code가 직접 열게 하기(설치·Claude 연결·CLI)",
     "headings": [
       "이 절에서 보는 것",
-      "1. Aside 설치",
+      "1. Aside 내려받아 설치하고 로그인",
       "2. Aside에 Claude 연결",
-      "3. Aside CLI 설치와 로그인",
-      "4. Claude Code에 Aside 스킬 넣기",
-      "5. Claude Code에서 Aside 불러 쓰기",
+      "3. CLI와 Claude Code 스킬 설치 — Aside 설정에서",
+      "4. Claude Code에서 Aside 불러 쓰기",
       "지킬 것",
       "자주 막히는 곳",
       "다음"
