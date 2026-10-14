@@ -33,8 +33,11 @@ next_clip_id: "part-2-02-plugins"
 ## 시작
 
 1. 새 세션에서 `C:\work\kimm\research-planner` 를 고릅니다.
-2. "이 폴더를 신뢰하시겠습니까" 창에서 신뢰합니다. 신뢰한 폴더에서만 플러그인과 규칙이 켜집니다.
-3. 입력창의 **+ → Plugins** 에서 플러그인 여섯 개(insane-research, insane-search, kkirikkiri, skillers-suda, docs-guide, show-me-the-prd)가 켜졌는지 봅니다. 안 켜져도 실습 2는 진행됩니다.
+2. "이 워크스페이스를 신뢰하시겠습니까?" 창에서 **작업 공간 신뢰**를 누릅니다. 신뢰한 폴더에서만 플러그인과 규칙이 켜집니다.
+
+   ![폴더 신뢰 창 (앱 실제 화면)](/images/setup/04-trust.png)
+
+3. 입력창 왼쪽 아래 **+ → 플러그인** 에서 플러그인 여섯 개(insane-research, insane-search, kkirikkiri, skillers-suda, docs-guide, show-me-the-prd)가 켜졌는지 봅니다. 안 켜져도 실습 2는 진행됩니다.
 4. 이렇게 보냅니다.
 
 ```text
@@ -42,6 +45,14 @@ next_clip_id: "part-2-02-plugins"
 ```
 
 실습 전체 흐름이 먼저 나오고, 방식(강사 따라 하기 / 내 자료로)을 선택 창에서 고릅니다.
+
+`/lab` 까지 치면 실습 명령 목록이 뜹니다. `lab2` 를 고르고 Enter를 누릅니다.
+
+![/lab 을 치면 뜨는 실습 명령 목록 (앱 실제 화면)](/images/setup/05-lab-menu.png)
+
+전체 흐름 아래에 이런 선택 창이 뜹니다. 고르고 **제출**을 누릅니다.
+
+![실습 2 방식 선택 창 (앱 실제 화면)](/images/setup/06-choice.png)
 
 **이렇게 나옵니다** — /lab2 를 보내면 전체 흐름부터
 
