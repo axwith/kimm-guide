@@ -15,7 +15,7 @@ next_clip_id: "part-1-01-first"
 | 자료 | 내려받기 |
 |---|---|
 | 오전 강의 — Claude Code란, 연구개발 활용 사례, 장비 연동, 피지컬 AI, Jev | [KIMM-오전-강의.pdf](/decks/kimm-morning.pdf) |
-| 오후 실습 가이드 — 실습 1~4, 더 해 보기, 막힐 때 | [KIMM-오후-실습가이드.pdf](/decks/kimm-afternoon.pdf) |
+| 오후 실습 가이드 — 실습 1~4, +α Aside, 더 해 보기, 막힐 때 | [KIMM-오후-실습가이드.pdf](/decks/kimm-afternoon.pdf) |
 
 PDF 속 영상은 정지 화면입니다. 화면을 누르거나 아래 원본 주소를 열면 재생됩니다.
 
@@ -50,6 +50,7 @@ Jev 영상은 저자 보고와 커뮤니티 데모입니다. 시뮬레이션이 
 | 실습 2-B | matplotlib 공식 문서 | [matplotlib.org](https://matplotlib.org/stable/users/explain/text/fonts.html) |
 | 실습 3 | 국가 R&D 공고 | [NTIS 국가R&D통합공고](https://www.ntis.go.kr) · [IRIS 범부처통합연구지원시스템](https://www.iris.go.kr) |
 | 실습 2·3 | 플러그인 6종 | [github.com/fivetaku/gptaku_plugins](https://github.com/fivetaku/gptaku_plugins) |
+| +α | Aside 브라우저 | [aside.com/download](https://aside.com/download) · [공식 도움말](https://docs.aside.com) |
 
 ---
 
