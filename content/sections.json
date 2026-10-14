@@ -1,0 +1,215 @@
+{
+  "site": {
+    "name": "KIMM 실습 안내",
+    "url": "kimm.axwith.com",
+    "description": "한국기계연구원 Claude Code 활용 교육 실습 안내",
+    "course_version": "2026-10-15",
+    "version": "1.0.0",
+    "lastUpdated": "2026-10-14"
+  },
+  "sections": [
+    {
+      "id": "part-0-01-before",
+      "tier": "part-0",
+      "part": 0,
+      "clip": 1,
+      "order": 1,
+      "slug": "before",
+      "title": "시작 전 준비",
+      "subtitle": "앱 로그인, 실습 폴더 받기, 백업",
+      "duration_min": 15,
+      "icon": "settings",
+      "badge": null,
+      "file": "parts/part-0-01-before.md",
+      "type": "lecture"
+    },
+    {
+      "id": "part-0-02-materials",
+      "tier": "part-0",
+      "part": 0,
+      "clip": 2,
+      "order": 2,
+      "slug": "materials",
+      "title": "강의 자료와 링크",
+      "subtitle": "오전·오후 덱 PDF, 오전 영상 원본, 공개 자료 출처",
+      "duration_min": 5,
+      "icon": "book-open",
+      "badge": null,
+      "file": "parts/part-0-02-materials.md",
+      "type": "lecture"
+    },
+    {
+      "id": "part-1-01-first",
+      "tier": "part-1",
+      "part": 1,
+      "clip": 1,
+      "order": 3,
+      "slug": "first",
+      "title": "실습 1. 처음 써 보기",
+      "subtitle": "빈 폴더에서 말 한마디로 논문 수 그래프까지",
+      "duration_min": 30,
+      "icon": "play",
+      "badge": null,
+      "file": "parts/part-1-01-first.md",
+      "type": "lecture"
+    },
+    {
+      "id": "part-2-01-workspace",
+      "tier": "part-2",
+      "part": 2,
+      "clip": 1,
+      "order": 4,
+      "slug": "workspace",
+      "title": "실습 2. 내 워크스페이스 만들기",
+      "subtitle": "인터뷰와 내 자료로 나를 아는 공간 만들기",
+      "duration_min": 40,
+      "icon": "user-check",
+      "badge": null,
+      "file": "parts/part-2-01-workspace.md",
+      "type": "lecture"
+    },
+    {
+      "id": "part-2-02-plugins",
+      "tier": "part-2",
+      "part": 2,
+      "clip": 2,
+      "order": 5,
+      "slug": "plugins",
+      "title": "실습 2-B. 플러그인 써 보기(선택)",
+      "subtitle": "docs-guide·show-me-the-prd가 남긴 파일과 근거 확인",
+      "duration_min": 20,
+      "icon": "plug",
+      "badge": null,
+      "file": "parts/part-2-02-plugins.md",
+      "type": "lecture"
+    },
+    {
+      "id": "part-3-01-one-topic",
+      "tier": "part-3",
+      "part": 3,
+      "clip": 1,
+      "order": 6,
+      "slug": "one-topic",
+      "title": "실습 3. 주제 하나로 끝까지",
+      "subtitle": "문헌 → 공고 적합도 → 주제 고르기 → 기획서",
+      "duration_min": 45,
+      "icon": "target",
+      "badge": null,
+      "file": "parts/part-3-01-one-topic.md",
+      "type": "lecture"
+    },
+    {
+      "id": "part-4-01-grow",
+      "tier": "part-4",
+      "part": 4,
+      "clip": 1,
+      "order": 7,
+      "slug": "grow",
+      "title": "실습 4. 내 공간으로 키우기",
+      "subtitle": "스킬, 훅 기록, /wrap, KB 계획, 예약 실행",
+      "duration_min": 30,
+      "icon": "brain",
+      "badge": null,
+      "file": "parts/part-4-01-grow.md",
+      "type": "lecture"
+    },
+    {
+      "id": "part-4-02-more",
+      "tier": "part-4",
+      "part": 4,
+      "clip": 2,
+      "order": 8,
+      "slug": "more",
+      "title": "더 해 보기와 마무리",
+      "subtitle": "주제 비교, 세 관점 검토, 모의 장비 MCP, 설문",
+      "duration_min": 20,
+      "icon": "rocket",
+      "badge": null,
+      "file": "parts/part-4-02-more.md",
+      "type": "lecture"
+    },
+    {
+      "id": "part-4-03-after",
+      "tier": "part-4",
+      "part": 4,
+      "clip": 3,
+      "order": 9,
+      "slug": "after",
+      "title": "강의 뒤에 계속 쓰기",
+      "subtitle": "KB를 묶음으로 키우기, 예약 실행, 기관 규정",
+      "duration_min": 10,
+      "icon": "folder-tree",
+      "badge": null,
+      "file": "parts/part-4-03-after.md",
+      "type": "lecture"
+    },
+    {
+      "id": "ref-troubleshooting",
+      "tier": "reference",
+      "part": null,
+      "clip": null,
+      "order": 110,
+      "slug": "troubleshooting",
+      "title": "막힐 때",
+      "subtitle": "설치·로그인·권한·한도·인터넷·플러그인",
+      "duration_min": null,
+      "icon": "help-circle",
+      "badge": null,
+      "file": "reference/troubleshooting.md",
+      "type": "reference"
+    },
+    {
+      "id": "ref-commands",
+      "tier": "reference",
+      "part": null,
+      "clip": null,
+      "order": 111,
+      "slug": "commands",
+      "title": "명령 한눈에 보기",
+      "subtitle": "research-planner 명령과 실습 스킬",
+      "duration_min": null,
+      "icon": "terminal",
+      "badge": null,
+      "file": "reference/commands.md",
+      "type": "reference"
+    }
+  ],
+  "tiers": {
+    "part-0": {
+      "label": "시작하기",
+      "description": "실습 폴더를 받고, 강의 자료와 링크를 확인합니다",
+      "count": 2,
+      "order": 0
+    },
+    "part-1": {
+      "label": "실습 1. 처음 써 보기",
+      "description": "규칙도 명령도 없는 폴더에서도 말 한마디로 결과가 나옵니다",
+      "count": 1,
+      "order": 1
+    },
+    "part-2": {
+      "label": "실습 2. 내 워크스페이스",
+      "description": "나를 알고 시작하는 연구 공간을 만듭니다",
+      "count": 2,
+      "order": 2
+    },
+    "part-3": {
+      "label": "실습 3. 주제 하나로 끝까지",
+      "description": "앞 단계가 남긴 파일을 다음 단계가 읽으며 기획서까지 갑니다",
+      "count": 1,
+      "order": 3
+    },
+    "part-4": {
+      "label": "실습 4. 내 공간으로 키우기",
+      "description": "오늘 만든 공간을 내일도 이어서 씁니다",
+      "count": 3,
+      "order": 4
+    },
+    "reference": {
+      "label": "참고",
+      "description": "막혔을 때 펼쳐 보는 자료",
+      "count": 2,
+      "order": 99
+    }
+  }
+}

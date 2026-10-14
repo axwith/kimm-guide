@@ -1,0 +1,185 @@
+[
+  {
+    "id": "part-0-01-before",
+    "tier": "part-0",
+    "tier_label": "시작하기",
+    "title": "시작 전 준비",
+    "subtitle": "앱 로그인, 실습 폴더 받기, 백업",
+    "headings": [
+      "이 페이지에서 할 것",
+      "1. 실습 폴더 받기",
+      "2. 파이썬 가상환경과 패키지",
+      "3. 앱 열기",
+      "4. 백업",
+      "오늘 지킬 것",
+      "다음"
+    ],
+    "url": "/#part-0-01-before"
+  },
+  {
+    "id": "part-0-02-materials",
+    "tier": "part-0",
+    "tier_label": "시작하기",
+    "title": "강의 자료와 링크",
+    "subtitle": "오전·오후 덱 PDF, 오전 영상 원본, 공개 자료 출처",
+    "headings": [
+      "강의 자료",
+      "오전에 본 영상·자료 원본",
+      "오후 실습에서 쓰는 공개 자료",
+      "다음"
+    ],
+    "url": "/#part-0-02-materials"
+  },
+  {
+    "id": "part-1-01-first",
+    "tier": "part-1",
+    "tier_label": "실습 1. 처음 써 보기",
+    "title": "실습 1. 처음 써 보기",
+    "subtitle": "빈 폴더에서 말 한마디로 논문 수 그래프까지",
+    "headings": [
+      "이 실습에서 보는 것",
+      "STEP 1. 폴더 열고 말 걸기",
+      "STEP 2. 승인 창 읽기",
+      "STEP 3. 계획 모드로 맡기기",
+      "STEP 4. 결과 확인하고 고치기",
+      "STEP 5. 매번 다시 말한 것 적기",
+      "결과물",
+      "자주 막히는 곳",
+      "다음"
+    ],
+    "url": "/#part-1-01-first"
+  },
+  {
+    "id": "part-2-01-workspace",
+    "tier": "part-2",
+    "tier_label": "실습 2. 내 워크스페이스",
+    "title": "실습 2. 내 워크스페이스 만들기",
+    "subtitle": "인터뷰와 내 자료로 나를 아는 공간 만들기",
+    "headings": [
+      "이 실습에서 보는 것",
+      "두 가지 방식",
+      "시작",
+      "STEP 1. 나를 알려 주기 — 질문하기",
+      "STEP 2. 넣을 자료 고르기 — 기획하기",
+      "STEP 3. 흡수 — 만들기",
+      "STEP 4. \"이렇게 이해했어요\" 대조 — 검토하기",
+      "STEP 5. 반영 확인과 비교 — 개선하기",
+      "결과물",
+      "자주 막히는 곳",
+      "다음"
+    ],
+    "url": "/#part-2-01-workspace"
+  },
+  {
+    "id": "part-2-02-plugins",
+    "tier": "part-2",
+    "tier_label": "실습 2. 내 워크스페이스",
+    "title": "실습 2-B. 플러그인 써 보기(선택)",
+    "subtitle": "docs-guide·show-me-the-prd가 남긴 파일과 근거 확인",
+    "headings": [
+      "이 실습에서 보는 것",
+      "1. docs-guide — 그래프를 한글로 고치기",
+      "2. show-me-the-prd — 도구 기획",
+      "3. 결과 폴더 확인",
+      "결과물",
+      "자주 막히는 곳",
+      "다음"
+    ],
+    "url": "/#part-2-02-plugins"
+  },
+  {
+    "id": "part-3-01-one-topic",
+    "tier": "part-3",
+    "tier_label": "실습 3. 주제 하나로 끝까지",
+    "title": "실습 3. 주제 하나로 끝까지",
+    "subtitle": "문헌 → 공고 적합도 → 주제 고르기 → 기획서",
+    "headings": [
+      "이 실습에서 보는 것",
+      "STEP 1. 문헌 찾기 — 질문하기",
+      "STEP 2. 공고 찾고 나랑 맞는지 보기 — 검토하기",
+      "STEP 3. 주제 고르기 — 기획하기",
+      "STEP 4. 기획서 — 만들기",
+      "STEP 5. 검사하고 고치기 — 개선하기",
+      "결과물",
+      "자주 막히는 곳",
+      "다음"
+    ],
+    "url": "/#part-3-01-one-topic"
+  },
+  {
+    "id": "part-4-01-grow",
+    "tier": "part-4",
+    "tier_label": "실습 4. 내 공간으로 키우기",
+    "title": "실습 4. 내 공간으로 키우기",
+    "subtitle": "스킬, 훅 기록, /wrap, KB 계획, 예약 실행",
+    "headings": [
+      "이 실습에서 보는 것",
+      "STEP 1. 스킬 만들기 — 만들기",
+      "STEP 2. 훅이 남긴 이력 — 검토하기",
+      "STEP 3. 기록을 다음 세션으로 — 개선하기",
+      "STEP 4. KB 키우기 계획 — 기획하기",
+      "STEP 5. 자동 실행 — 만들기 (\"등록까지\"를 고른 분)",
+      "자동으로 돌아가는 것",
+      "자주 막히는 곳",
+      "다음"
+    ],
+    "url": "/#part-4-01-grow"
+  },
+  {
+    "id": "part-4-02-more",
+    "tier": "part-4",
+    "tier_label": "실습 4. 내 공간으로 키우기",
+    "title": "더 해 보기와 마무리",
+    "subtitle": "주제 비교, 세 관점 검토, 모의 장비 MCP, 설문",
+    "headings": [
+      "A. 주제 두 개 비교",
+      "B. 세 관점 검토",
+      "E. 모의 장비 MCP",
+      "마무리",
+      "다음"
+    ],
+    "url": "/#part-4-02-more"
+  },
+  {
+    "id": "part-4-03-after",
+    "tier": "part-4",
+    "tier_label": "실습 4. 내 공간으로 키우기",
+    "title": "강의 뒤에 계속 쓰기",
+    "subtitle": "KB를 묶음으로 키우기, 예약 실행, 기관 규정",
+    "headings": [
+      "1. 넣기 전에 — 보안부터",
+      "2. 넣는 순서 — 묶음으로",
+      "3. 넣은 뒤에 — 확인",
+      "4. 유지",
+      "5. 자동으로 돌리기",
+      "다음"
+    ],
+    "url": "/#part-4-03-after"
+  },
+  {
+    "id": "ref-troubleshooting",
+    "tier": "reference",
+    "tier_label": "참고",
+    "title": "막힐 때",
+    "subtitle": "설치·로그인·권한·한도·인터넷·플러그인",
+    "headings": [
+      "설치, 로그인, 파이썬",
+      "권한, 한도, 인터넷, 플러그인",
+      "기관 자료를 넣어 버렸을 때"
+    ],
+    "url": "/#ref-troubleshooting"
+  },
+  {
+    "id": "ref-commands",
+    "tier": "reference",
+    "tier_label": "참고",
+    "title": "명령 한눈에 보기",
+    "subtitle": "research-planner 명령과 실습 스킬",
+    "headings": [
+      "실습 스킬",
+      "연구 기획 명령",
+      "검토 담당(서브에이전트)"
+    ],
+    "url": "/#ref-commands"
+  }
+]
