@@ -6,7 +6,7 @@ next_clip_id: "part-0-02-materials"
 
 # 시작 전 준비
 
-> 실습 폴더를 내려받아 `C:\work\kimm` 에 두고, 파이썬을 준비하고, 앱에서 첫 폴더를 엽니다.
+> Claude 데스크톱 앱을 설치하고, 실습 폴더를 내려받아 `C:\work\kimm` 에 두고, 앱에서 첫 폴더를 엽니다.
 > 순서대로 따라 하면 됩니다. 막히면 손을 들어 주세요.
 
 ---
@@ -15,11 +15,31 @@ next_clip_id: "part-0-02-materials"
 
 | 단계 | 할 일 | 끝나면 |
 |---|---|---|
+| 0 | Claude 데스크톱 앱 설치 (교육 전날까지) | 앱이 열리고 로그인됨 |
 | 1 | 실습 폴더 ZIP 내려받기 | `다운로드` 폴더에 `kimm-lab-main.zip` |
 | 2 | 압축을 풀어 `C:\work` 에 두기 | `C:\work\kimm-lab-main` 폴더 |
 | 3 | 폴더 이름을 `kimm` 으로 바꾸기 | `C:\work\kimm` 폴더 |
-| 4 | 파이썬 가상환경과 패키지 | 확인 명령이 `ok` |
-| 5 | 앱 열고 설정 맞추기 | Code 탭, 권한 모드 Manual |
+| 4 | 파이썬이 있는지 확인 | `python --version` 에 버전이 나옴 |
+| 5 | 앱에서 Code 탭과 폴더 열기 | Code 탭, 로컬, 권한 모드 수동 |
+
+---
+
+## 0단계. Claude 데스크톱 앱 설치 (교육 전날까지)
+
+오후 실습은 모두 **Claude 데스크톱 앱의 Code 탭**에서 합니다. 미리 설치하고 기관 계정으로 로그인해 둡니다.
+
+1. 브라우저에서 아래 주소를 엽니다.
+
+```text
+https://claude.com/download
+```
+
+2. **Windows용 다운로드** 를 누릅니다. ARM 노트북(Snapdragon 등)이면 옆의 `Windows(arm64)` 를 고릅니다.
+
+![Claude 다운로드 페이지의 Windows용 다운로드 버튼](/images/setup/00-download.png)
+
+3. 받은 설치 파일(`다운로드` 폴더)을 두 번 눌러 설치합니다.
+4. 앱을 열고 기관 계정으로 로그인합니다. 위쪽에 Code 탭(`</>` 아이콘)이 보이면 됩니다. 안 보이면 계정 좌석 문제일 수 있으니 강사에게 알려 주세요.
 
 ---
 
@@ -87,49 +107,37 @@ C:\work\kimm\
 
 ---
 
-## 4단계. 파이썬 가상환경과 패키지
+## 4단계. 파이썬이 있는지 확인
 
-실습 1의 그래프와 실습 폴더의 검사 스크립트가 파이썬을 씁니다.
+실습 폴더의 기록 훅과 검사 스크립트가 `python` 명령으로 돕니다. 파이썬 **설치**만 미리 확인합니다. 그래프에 필요한 패키지(matplotlib 등)는 실습 중에 Claude Code가 필요할 때 승인 창을 띄우고 설치합니다.
 
-**PowerShell을 `C:\work\kimm` 에서 열기**: 탐색기에서 `C:\work\kimm` 을 연 상태로 주소창을 누르고 `powershell` 이라고 입력한 뒤 `Enter` 를 누릅니다. 파란(또는 검은) 창이 `PS C:\work\kimm>` 으로 시작하면 됩니다.
-
-1. 파이썬이 있는지 봅니다.
-
-```powershell
-py -3.12 --version
-```
-
-`Python 3.12.x` 가 나오면 2로 갑니다. 안 나오거나 Microsoft Store가 열리면 python.org에서 Python 3.12 Windows 설치 파일(64-bit)을 받아 설치합니다. 설치 첫 화면에서 **Add python.exe to PATH** 를 꼭 체크합니다. 설치 후 PowerShell 창을 닫고 다시 엽니다.
-
-2. 가상환경을 만들고 패키지를 설치합니다. 한 줄씩 붙여 넣고 `Enter` 를 누릅니다.
+1. 시작 메뉴에서 `powershell` 을 검색해 **Windows PowerShell** 을 엽니다.
+2. 아래를 붙여 넣고 `Enter` 를 누릅니다.
 
 ```powershell
-py -3.12 -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -r requirements.txt
-.\.venv\Scripts\python.exe -m pip install -r equipment\requirements.txt
-```
-
-3. 확인합니다.
-
-```powershell
-.\.venv\Scripts\python.exe -c "import numpy, matplotlib; print('ok')"
 python --version
 ```
 
-첫 줄은 `ok`, 둘째 줄은 파이썬 버전이 나오면 됩니다. 실습 폴더의 기록 훅은 `python` 명령으로 실행됩니다.
+- `Python 3.x.x` 가 나오면 끝입니다.
+- 아무것도 안 나오거나 Microsoft Store가 열리면 python.org에서 Python 3.12 Windows 설치 파일(64-bit)을 받아 설치합니다. 설치 첫 화면에서 **Add python.exe to PATH** 를 꼭 체크합니다. 설치 후 PowerShell 창을 닫고 다시 열어 확인합니다.
 
-`pip install` 이 인증서 오류(`CERTIFICATE_VERIFY_FAILED`)나 시간 초과로 실패하면 사내 프록시 문제입니다. 손을 들어 주세요. 실습 1은 예비 자료로 진행할 수 있습니다.
+실습 중 패키지 설치가 인증서 오류(`CERTIFICATE_VERIFY_FAILED`)나 시간 초과로 실패하면 사내 프록시 문제입니다. 손을 들어 주세요. 실습 1은 예비 자료로 진행할 수 있습니다.
 
 ---
 
-## 5단계. 앱 열고 설정 맞추기
+## 5단계. 앱에서 Code 탭과 폴더 열기
 
-1. Claude 데스크톱 앱을 열고 기관 계정으로 로그인합니다.
-2. 위쪽 가운데 **Code** 탭을 누르고 환경은 **Local** 을 고릅니다. 업그레이드 안내가 뜨면 손을 듭니다.
-3. 입력창 아래에서 모델은 중간 등급(예: Sonnet), 권한 모드는 **Manual**(매번 묻기)로 맞춥니다.
-4. 폴더 선택에서 `C:\work\kimm\first` 를 고르면 실습 1을 시작할 준비가 끝납니다.
+![Claude 데스크톱 앱 Code 탭 화면. 1 Code 탭, 2 로컬, 3 폴더 선택, 4 권한 모드, 5 모델](/images/setup/03-desktop-app.png)
 
-기본 모델이 최상위 모델이면 오후 동안 사용 한도에 닿을 수 있습니다. 막힐 때만 올립니다.
+| 번호 | 할 일 |
+|---|---|
+| 1 | 위쪽의 **Code 탭**(`</>`)을 누릅니다 |
+| 2 | 실행 환경이 **로컬** 인지 봅니다 |
+| 3 | 폴더 버튼을 눌러 `C:\work\kimm\first` 를 고릅니다. 실습 2부터는 `C:\work\kimm\research-planner` 를 고릅니다 |
+| 4 | 권한 모드를 **수동**(매번 묻기)으로 맞춥니다 |
+| 5 | 모델은 중간 등급(예: Sonnet)으로 고릅니다. 최상위 모델은 오후 동안 사용 한도에 닿을 수 있습니다 |
+
+강사 맥 화면이라 모양이 조금 다를 수 있지만 Windows도 같은 위치에 있습니다. 폴더를 고르면 실습 1을 시작할 준비가 끝납니다.
 
 ---
 

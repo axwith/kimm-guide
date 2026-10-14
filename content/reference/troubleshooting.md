@@ -11,15 +11,15 @@
 | Code 탭에서 업그레이드 안내 | 계정 좌석 문제입니다. 손을 들고 강사 화면을 보며 진행 |
 | `unable to get local issuer certificate`, `CERTIFICATE_VERIFY_FAILED` | 사내 프록시나 파이썬 인증서 문제. 보조강사 호출, 급하면 예비자료 CSV로 진행 |
 | `python` 을 치면 Store가 열림 | Python 3.12 설치 확인: `py -3.12 --version` |
-| `running scripts is disabled` | 가상환경을 활성화하지 말고 `.venv\Scripts\python.exe` 를 직접 사용 |
-| `No module named ...` | `설치된 패키지만 써서 다시 해 줘` |
+| 패키지 설치(pip)가 시간 초과 | 사내 프록시 문제. 보조강사 호출, 실습 1은 예비자료 CSV로 진행 |
+| `No module named ...` | `필요한 패키지를 설치해 줘` 후 승인 창에서 허용 |
 | `/lab2`, `/start` 같은 명령이 안 보임 | 폴더를 `research-planner` 로 열었는지 확인하고 새 세션 |
 
 ## 권한, 한도, 인터넷, 플러그인
 
 | 증상 | 조치 |
 |---|---|
-| 승인 창 없이 바로 실행됨 | 권한 모드를 Manual로 |
+| 승인 창 없이 바로 실행됨 | 권한 모드를 수동으로 |
 | 되돌리기 후에도 파일이 그대로 | `다운로드` 의 ZIP을 다시 풀어 `C:\work\kimm` 을 새로 만듦([시작 전 준비](#part-0-01-before) 2~3단계) |
 | 세션 한도 안내 | 중간 등급 모델로 바꾸고, 걸렸으면 강사 화면으로 따라가기 |
 | 와이파이 끊김, 검색이 안 됨 | 실습 1은 `예비자료`, 실습 3은 `examples\모범결과` 로 |

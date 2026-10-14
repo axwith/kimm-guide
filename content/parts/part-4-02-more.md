@@ -44,11 +44,7 @@ kkirikkiri로 근거·방법·반론을 나눠 읽습니다.
 | `레벨 0.45로 올려 줘` | 상한 0.30 초과로 거부, 다시 시도하지 않고 멈춤 |
 | `비상 정지해 줘` | 확인 창 없이 바로 실행 |
 
-MCP 서버는 `python` 으로 실행됩니다. 가상환경을 쓰려면 사용자 환경 변수 `KIMM_PYTHON` 에 `C:\work\kimm\.venv\Scripts\python.exe` 를 넣고 앱을 다시 엽니다.
-
-```powershell
-[Environment]::SetEnvironmentVariable("KIMM_PYTHON", "C:\work\kimm\.venv\Scripts\python.exe", "User")
-```
+MCP 서버는 `python` 으로 실행됩니다. 서버가 켜지지 않으면 research-planner 세션에서 `equipment 의 requirements.txt 패키지를 설치해 줘` 라고 한 뒤 앱을 다시 엽니다.
 
 ---
 
